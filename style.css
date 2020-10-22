@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    font-size: 1rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: cadetblue;
+    height: 400px;
+    display: flex;
+    padding: 30px 50px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+header > .pic-block {
+    flex: 1;
+}
+
+header > .pic-block > img {
+    display: block;
+    max-width: 100%;
+    /* border-radius: 50%; */
+    margin: 0 auto;
+}
+
+header > .content-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > .content-block > .name {
+    font-size: 3rem;
+}
+
+header > .content-block > .designation {
+    font-size: 1.5rem;
+}
+
+header > .content-block > .brief {
+    font-size: 1.7rem;
+    margin-top: 30px;
+}
+
+header > .content-block > .link-coll {
+    display: flex;
+    margin-top: 40px;
+    list-style: none;
+    width: 60%;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+header > .content-block > .link-coll > .link > a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: firebrick;
+    height: 40px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Responsive CSS */
+@media only screen and (max-width: 600px) {
+    :root{
+        font-size: .7rem;
+    }
+
+    header{
+        flex-direction: column;
+        height: 600px;
+
+    }
+
+    header > .content-block {
+        margin-top: 30px;
+    }
+    header > .content-block > .link-coll {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    :root{
+        font-size: .7rem;
+    }
+
+    header{
+        flex-direction: column;
+        height: 600px;
+    }
+
+    header > .content-block {
+        margin-top: 30px;
+    }
+    header > .content-block > .link-coll {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root{
+        font-size: .7rem;
+    }
+
+    header{
+        flex-direction: column;
+        height: 600px;
+    }
+
+    header > .content-block {
+        margin-top: 30px;
+    }
+    header > .content-block > .link-coll {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    :root{
+        font-size: .8rem;
+    }
+
+    header{
+        flex-direction: row;
+        height: 500px;
+    }
+
+    header > .content-block {
+        margin-top: 0;
+    }
+    header > .content-block > .link-coll {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root{
+        font-size: .8rem;
+    }
+
+    header{
+        height: 400px;
+    }
+
+    header > .content-block {
+        margin-top: 0px;
+    }
+    header > .content-block > .link-coll {
+        width: 60%;
+    }
+
+}
