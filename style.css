@@ -78,8 +78,53 @@ header > .content-block > .link-coll > .link > a {
     align-items: center;
 }
 
+main{
+    background-color: #d8d8d8;
+    padding: 40px 1rem;
+}
 
+section {
+    max-width: 80%;
+    margin: 0 auto 80px;
+}
 
+.section-title {
+    font-size: 2rem;
+    margin: 0px 0px 60px;
+}
+.section-sub {
+    font-size: 1.7rem;
+    border-top: 1px solid crimson;
+    color: crimson;
+    border-bottom: 1px solid crimson;
+    padding: 10px 0px;
+    margin: 0px 0px 20px;
+}
+.section-sub-info{
+    font-size: 1.6rem;
+}
+
+.box {
+    background-color: white;
+    padding: 5rem 3rem;
+    border-radius: 5px;
+    margin: 0px 0px 30px;
+
+}
+.edu > li {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+footer {
+    background-color: black;
+    color: #444444;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
 /* Responsive CSS */
 @media only screen and (max-width: 600px) {
     :root{
@@ -156,7 +201,7 @@ header > .content-block > .link-coll > .link > a {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     :root{
         font-size: .8rem;
     }
@@ -172,4 +217,4 @@ header > .content-block > .link-coll > .link > a {
         width: 60%;
     }
 
-}
+} */
