@@ -117,6 +117,7 @@ section {
 }
 
 footer {
+    position: relative;
     background-color: black;
     color: #444444;
     height: 100px;
@@ -125,30 +126,121 @@ footer {
     align-items: center;
     font-size: 1.2rem;
 }
+
+.top  > a{
+   position: absolute;
+   color: white;
+   bottom: 50px; 
+   font-size: 2.5rem;
+   right: 100px;
+}
 /* Responsive CSS */
 @media only screen and (max-width: 600px) {
     :root{
         font-size: .7rem;
     }
 
-    header{
-        flex-direction: column;
-        height: 600px;
+    header {
+        background-color: black;
+        height: auto;
+        padding: 0px;
+        width: 100%;
+        height: 150vh;
+        display: block;
+    }
 
+    header > .pic-block > img
+    {
+        display: none;
+    }
+
+    header > .pic-block {
+        height: 100vh;
+        background-image: url('./images/green-1350599_1280.jpg');
+        width: 100%;
+        background-size: cover;
+    }
+
+    header > .content-block > .name {
+        font-size: 2.5rem;
+        font-weight: lighter;
+    }
+
+    header > .content-block > .designation{
+        font-weight: lighter;
+        color: lightgreen;
     }
 
     header > .content-block {
-        margin-top: 30px;
+        padding: 0px 10px;
+        background-color: black;
+        color: white;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
+        height: 50%;
+        position: relative;
+        bottom: 30vh;
     }
+
     header > .content-block > .link-coll {
         width: 100%;
+        justify-content: space-evenly;
+    }
+
+    header > .content-block > .link-coll > .link > a {
+        border-radius: 4px;
+        width: 80px;
+        background-color: black;
+        border: 1px solid white;
+        box-shadow: 0px 0px 0px white;
+    }
+
+    header > .content-block > .link-coll > .link > a:hover{
+        transform: translate(-2px,-3px);
+        box-shadow: 2px 3px;
+    }
+
+    main{
+        padding: 30px 0px;
+    }
+
+    section {
+        max-width: 95%;
+        margin: 0 auto 60px;
+    }
+    .section-sub {
+        padding: 10px 0px;
+        margin: 0px 0px 10px;
+    }
+    
+    .box {
+        padding: 3rem 2rem;
+    }
+    
+    footer {
+        position: relative;
+        background-color: black;
+        color: #444444;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    
+    .top  > a{
+       position: absolute;
+       color: white;
+       bottom: 50px; 
+       font-size: 2.5rem;
+       right: 100px;
     }
 }
 
 
 @media only screen and (min-width: 600px) {
     :root{
-        font-size: .7rem;
+        font-size: .4rem;
     }
 
     header{
