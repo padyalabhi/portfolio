@@ -204,7 +204,7 @@ footer {
     }
 
     header > .pic-block {
-        height: 90vh;
+        height: 80vh;
         background-image: url('./images/green-1350599_1280.jpg');
         width: 100%;
         background-size: cover;

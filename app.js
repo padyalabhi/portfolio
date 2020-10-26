@@ -2,12 +2,12 @@ function displayScrolling()
 {
     const scroll = document.querySelector(".scroll");
     
-    if(window.pageYOffset > 0)
+    if(window.pageYOffset == 0 && screen.width <= 600)
     {
-        scroll.style.display = "none";
+        scroll.style.display = "block";
     }
     else{
-        scroll.style.display = "block";
+        scroll.style.display = "none";
     }
 }
 
