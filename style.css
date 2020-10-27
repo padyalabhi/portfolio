@@ -83,21 +83,11 @@ header > .content-block > .link-coll > .link > a {
     font-size: 1.2rem;
     font-style: italic;
     position: relative;
-    color: gray;
+    color: rgb(197, 197, 197);
     display: none;
-    animation: scrolling 1.3s infinite linear;
+    animation: scrolling 1.3s reverse infinite linear;
 }
-.scroll::after{
-    content: '↓';
-    font-style: normal;
-    position: absolute;
-    font-size: 3rem;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    animation: swipeDown 1.3s infinite ease-in-out;
-}
+/*  */
 
 @keyframes swipeDown {
     from{
@@ -220,7 +210,7 @@ footer {
     header > .content-block > .designation{
         font-weight: lighter;
         color: lightgreen;
-        height: 10vh;
+        height: 8vh;
     }
 
     header > .content-block {
