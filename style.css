@@ -234,6 +234,12 @@ footer {
 
     main{
         padding: 30px 0px;
+        background-color: black;
+    }
+
+    .section-title{
+        color: white;
+        font-weight: lighter;
     }
 
     section {
