@@ -145,12 +145,13 @@ section {
 footer {
     position: relative;
     background-color: black;
-    color: #444444;
+    color: #ffffff;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    background-color: rgb(20, 20, 20);
 }
 
 .top  > a{
@@ -253,6 +254,7 @@ footer {
     
     .box {
         padding: 3rem 2rem;
+        background-color: #c8d2ff;
     }
     
     footer {
@@ -272,6 +274,12 @@ footer {
        bottom: 50px; 
        font-size: 2.5rem;
        right: 100px;
+    }
+    .card {
+        color: grey;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
