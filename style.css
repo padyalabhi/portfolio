@@ -96,7 +96,7 @@ header > .content-block > .link-coll > .link > a {
     }
     50%{
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(0px);
     }
     100%{
         opacity: 1;
