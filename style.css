@@ -89,6 +89,7 @@ header > .content-block > .link-coll > .link > a {
 }
 .scroll::after{
     content: '↓';
+    font-style: normal;
     position: absolute;
     font-size: 3rem;
     top: -100%;
